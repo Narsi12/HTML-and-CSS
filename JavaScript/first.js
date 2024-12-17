@@ -48,7 +48,7 @@ functions
 
 */
 
-const student = {
+const student = { // objects
     FullName: "Narsimha",
     age: 24,
     Isworking: true,
@@ -116,3 +116,34 @@ while(i<=5){
     console.log("i = ",i);
     i++;
 }
+
+// do while loop will excute and condition will check at the end.at least run at 1 time
+
+let j = 1;
+do{
+    console.log("Apna college");
+    i++;
+}while(i<=10)
+
+// for-of loop will help us iterarte on Strings and Arrays, value will come automatically and updatation will 
+// also done automatically
+
+let str = "NArsimhachellaboina";
+for (let i of str){
+    console.log("i= ",i);
+}
+
+
+let teacher = {
+    name : "Narsimha",
+    age:24,
+    slaray:300000,
+    subject:"Computer science",
+    isAvalibale:true
+};
+
+// It will return the keys of every object
+for(let key in teacher){
+    console.log("key=", key, "val=", teacher[key] )
+}
+
